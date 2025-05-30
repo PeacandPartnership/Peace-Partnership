@@ -4,19 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Peace and Partnership Coin</title>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 <style>
   body {
     margin: 0;
     font-family: 'Heebo', sans-serif;
-    background: #111;
+    background: linear-gradient(135deg, #0d6efd, #00bcd4);
     color: #fff;
     overflow-x: hidden;
+    position: relative;
   }
   header {
     text-align: center;
-    padding: 3rem 1rem;
-    background: #0d6efd;
+    padding: 4rem 1rem;
+    background: rgba(0, 0, 0, 0.4);
     position: relative;
   }
   header img {
@@ -26,24 +27,32 @@
     animation: pulse 2s infinite;
   }
   header h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-family: 'Orbitron', sans-serif;
     margin: 1rem 0 0;
+    text-shadow: 0 0 10px #ffd700;
   }
   header p {
     font-size: 1.2rem;
-    opacity: 0.8;
+    opacity: 0.9;
+    color: #eee;
   }
   section {
     max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    margin: 3rem auto;
+    padding: 1rem;
     line-height: 1.6;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   }
   h2 {
     font-size: 2rem;
     margin-top: 2rem;
     border-left: 4px solid #ffd700;
     padding-left: 0.5rem;
+    font-family: 'Orbitron', sans-serif;
   }
   .highlight {
     color: #ffd700;
@@ -66,22 +75,37 @@
   footer {
     text-align: center;
     padding: 1rem;
-    background: #0d6efd;
-    margin-top: 3rem;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://source.unsplash.com/1600x900/?peace,stars') no-repeat center center/cover;
+    opacity: 0.2;
+    z-index: -1;
+    animation: backgroundShift 20s infinite alternate ease-in-out;
   }
   @keyframes pulse {
-    0% { transform: scale(1); }
+    0%, 100% { transform: scale(1); }
     50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+  }
+  @keyframes backgroundShift {
+    0% { transform: scale(1) translate(0, 0); }
+    100% { transform: scale(1.1) translate(20px, 20px); }
   }
 </style>
 </head>
 <body>
 
+<div class="animated-bg"></div>
+
 <header>
   <img src="ChatGPT Image May 26, 2025, 01_46_42 PM.png" alt="Peace and Partnership Logo">
   <h1>Peace & Partnership Coin</h1>
-  <p>Community-driven meme coin with trust and transparency.</p>
+  <p>Community-driven meme coin with trust, transparency, and vibrant community spirit.</p>
 </header>
 
 <section>
@@ -98,15 +122,15 @@
   <p><span class="highlight">Developer’s Initial Supply:</span> 0 tokens</p>
 
   <h2>Burn Plan</h2>
-  <p>When tax revenue reaches <span class="highlight">2 million USDT</span>, 60% will be used to burn tokens, supporting community growth.</p>
-  <p>Afterward, monthly burns will continue.</p>
+  <p>When tax revenue reaches <span class="highlight">2 million USDT</span>, 60% will be used to burn tokens, supporting community growth and price increase.</p>
+  <p>Afterward, monthly burns will continue to support the project’s ecosystem.</p>
 
   <h2>Community Trust</h2>
   <p>The contract will be renounced to ensure a truly decentralized project for everyone.</p>
 
   <a class="button" href="https://x.com/Peaceparty2025" target="_blank">Follow us on X</a>
 
-  <p>Join us on this peaceful journey—Peace & Partnership over war!</p>
+  <p>Join us on this peaceful journey—Peace & Partnership over war! 🌟</p>
 </section>
 
 <footer>
