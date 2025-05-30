@@ -2,107 +2,175 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Peace and Partnership</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peace and Partnership Coin</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    :root {
+      --primary-color: #0d6efd;
+      --secondary-color: #f8f9fa;
+      --accent-color: #ffd700;
+      --dark-color: #343a40;
     }
+
     body {
-      font-family: 'Outfit', sans-serif;
-      background: #f9fafb;
-      color: #1f2937;
-      line-height: 1.6;
-      cursor: url('cursor.png'), auto;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(120deg, #e0f7fa, #ffffff);
+      color: #333;
     }
+
     header {
-      background: url('hero.jpg') center/cover no-repeat;
+      background: var(--primary-color);
+      color: #fff;
       text-align: center;
-      padding: 120px 20px;
-      color: white;
+      padding: 2rem 1rem;
+      position: relative;
     }
+
+    header img {
+      width: 120px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 1rem;
+    }
+
     header h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
+      margin: 0;
+      font-size: 2.5rem;
     }
+
     header p {
+      margin: 0.5rem 0 0;
       font-size: 1.2rem;
-      max-width: 600px;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
       margin: 0 auto;
     }
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
+
     section h2 {
-      font-size: 2rem;
-      color: #111827;
-      margin-bottom: 20px;
+      color: var(--primary-color);
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
     }
-    section p {
-      max-width: 700px;
-      margin: 0 auto 20px;
+
+    .tokenomics {
+      background: var(--secondary-color);
+      border-radius: 10px;
+      padding: 1rem;
+      margin: 1rem 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
-    .btn {
-      background-color: #10b981;
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 8px;
+
+    .highlight {
+      color: var(--primary-color);
       font-weight: bold;
-      display: inline-block;
-      margin-top: 20px;
     }
-    footer {
-      background: #1f2937;
-      color: white;
-      padding: 40px 20px;
+
+    .burn-plan {
+      background: #f1f1f1;
+      border-left: 4px solid var(--primary-color);
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    .community {
+      background: #d1e7dd;
+      border-left: 4px solid #0f5132;
+      padding: 1rem;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+
+    .social {
       text-align: center;
+      margin: 2rem 0;
+    }
+
+    .social a {
+      display: inline-block;
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: #fff;
+      background: var(--dark-color);
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      transition: background 0.3s;
+    }
+
+    .social a:hover {
+      background: #212529;
+    }
+
+    footer {
+      background: var(--primary-color);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section h2 {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Peace and Partnership</h1>
-    <p>A meme coin for unity, transparency, and growth.</p>
+    <img src="ChatGPT Image May 26, 2025, 01_46_42 PM.png" alt="PPC Logo" />
+    <h1>Peace & Partnership Coin</h1>
+    <p>A simple, community-driven meme coin. Trust, transparency, and partnership for everyone.</p>
   </header>
 
   <section>
     <h2>About the Project</h2>
     <p><strong>Total Supply:</strong> 1,618,000,000 tokens</p>
-    <p><strong>Why 1.618?</strong> Inspired by the Fibonacci Golden Ratio, symbolizing balance and growth.</p>
-    <p><strong>Tax:</strong> 1% on buys and sells – goes directly to fund project growth.</p>
-    <p><strong>No Developer Tokens:</strong> 100% community-focused launch.</p>
-  </section>
+    <p>Why <strong>1,618,000,000</strong>? Inspired by the Fibonacci Golden Ratio (1.618), symbolizing balance and growth.</p>
+    <p><strong>1% Buy & Sell Tax:</strong> This tax goes directly to the Developer to fund and grow the project.</p>
+    <p><strong>No Developer Tokens:</strong> The Developer will not hold any tokens to show full faith in the project.</p>
 
-  <section>
-    <h2>Tokenomics</h2>
-    <p><strong>Token Name:</strong> Peace and Partnership</p>
-    <p><strong>Symbol:</strong> PEACE</p>
-    <p><strong>Buy/Sell Tax:</strong> 3%</p>
-    <p><strong>Developer Initial Supply:</strong> 0 tokens</p>
-  </section>
+    <div class="tokenomics">
+      <h2>Tokenomics</h2>
+      <p><span class="highlight">Token Name:</span> Peace and Partnership</p>
+      <p><span class="highlight">Symbol:</span> PEACE</p>
+      <p><span class="highlight">Total Supply:</span> 1,618,000,000</p>
+      <p><span class="highlight">Tax:</span> 3% on buys & sells</p>
+      <p><span class="highlight">Developer’s Initial Supply:</span> 0 tokens</p>
+    </div>
 
-  <section>
-    <h2>Burn Plan & Community</h2>
-    <p><strong>Burn Trigger:</strong> When 2M USDT tax revenue is reached, 60% will burn tokens to reduce supply.</p>
-    <p><strong>Ongoing:</strong> Monthly burns to maintain price growth and reward holders.</p>
-    <p><strong>Contract Renounced:</strong> Full community ownership for true decentralization.</p>
-  </section>
+    <div class="burn-plan">
+      <h2>Burn Plan</h2>
+      <p>When the tax revenue reaches <strong>2 million USDT</strong>,</p>
+      <p><strong>60% of the tax revenue</strong> will be used to burn tokens, reducing supply and increasing scarcity.</p>
+      <p>After that, tokens will be burned monthly to support the community and price growth.</p>
+    </div>
 
-  <section>
-    <h2>Join the Movement</h2>
-    <p>Let’s build something meaningful – together in Peace and Partnership.</p>
-    <p>Follow us on X (Twitter): <strong>@Peaceparty2025</strong></p>
-    <a href="#" class="btn">Buy $PEACE</a>
+    <div class="community">
+      <h2>Community Trust</h2>
+      <p>The contract will be renounced, so ownership will be transferred to the community.</p>
+      <p>A truly decentralized and transparent project for everyone.</p>
+    </div>
+
+    <h2>Join Us</h2>
+    <p>Be part of our journey. Follow us on social media and let’s build something special together!</p>
+
+    <div class="social">
+      <a href="https://x.com/Peaceparty2025" target="_blank">Follow on X</a>
+    </div>
+
+    <p>It’s all about having Peace & Partnership instead of war. Let’s make this vision a reality together!</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Peace and Partnership. Built for the people, by the people.</p>
+    &copy; 2025 Peace and Partnership Coin. All rights reserved.
   </footer>
 
 </body>
