@@ -1,3 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peace & Partnership Coin</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --neon-pink: #ff00c8;
+  --neon-blue: #00f0ff;
+  --neon-green: #00ff88;
+  --dark-bg: #0c0c0c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: var(--dark-bg);
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(45deg, rgba(255,0,200,0.1), rgba(0,240,255,0.1), rgba(0,255,136,0.1));
+  background-size: 600% 600%;
+  animation: gradientMove 10s ease infinite;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  position: relative;
+  text-align: center;
+  padding: 4rem 1rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
+header img {
+  width: 150px;
+  animation: float 3s ease-in-out infinite alternate, glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  0% { filter: drop-shadow(0 0 10px var(--neon-pink)); }
+  100% { filter: drop-shadow(0 0 20px var(--neon-pink)); }
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: var(--neon-pink);
+  text-shadow: 0 0 5px var(--neon-pink);
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--neon-blue);
+  text-shadow: 0 0 5px var(--neon-blue);
+}
+
+p, li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.tokenomics, .burn-plan, .community, .roadmap {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--neon-pink);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "★";
+  color: var(--neon-green);
+  margin-right: 0.5rem;
+}
+
+button, a.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  background: var(--neon-pink);
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover, a.btn:hover {
+  background: var(--neon-green);
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #000;
+  color: #888;
+}
+
+footer p {
+  margin: 0;
+}
+
+video {
+  display: block;
+  margin: 2rem auto;
+  max-width: 90%;
+  border: 3px solid var(--neon-green);
+  border-radius: 20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Peace & Partnership Coin Logo" width="150">
+  <h1>Peace & Partnership Coin</h1>
+  <p>Trust, transparency, and partnership for everyone.</p>
+</header>
+
+<video autoplay loop controls playsinline>
+  <source src="PPC Trump.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 <section>
   <h2>About Us</h2>
   <p>Peace and Partnership Coin (PPC) is more than just a meme coin—it’s a community of like-minded individuals building a future together. Inspired by peace and partnership from all around the world. We want trust, transparency, and partnership for everyone.</p>
@@ -13,6 +180,13 @@
     <p><strong>Total Supply:</strong> 1,618,000,000</p>
     <p><strong>Developer’s Initial Supply:</strong> 2%</p>
     <p>The Developer will use the funds to grow the project.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Burn Plan</h2>
+  <div class="burn-plan">
+    <p>When tax revenue reaches 2 million USDT, after that 80% of the tax revenue will be used for burning tokens. Reducing supply and increasing scarcity. After that, monthly burns will continue to support the community and price growth.</p>
   </div>
 </section>
 
@@ -36,3 +210,16 @@
     </ul>
   </div>
 </section>
+
+<section style="text-align: center;">
+  <h2>Join Us</h2>
+  <p>Follow us on X: <a href="https://x.com/Peaceparty2025" class="btn" target="_blank">@Peaceparty2025</a></p>
+  <p>Let’s build something special together!</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Peace & Partnership Coin. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
